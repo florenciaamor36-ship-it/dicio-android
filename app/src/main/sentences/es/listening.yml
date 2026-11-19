@@ -1,0 +1,7 @@
+stop:
+  - deja|detén|para la? escucha|escuchar
+  - silencia|apaga el? micrófono
+
+start:
+  - empieza|inicia|comienza la? escucha|escuchar
+  - activa|enciende el? micrófono
