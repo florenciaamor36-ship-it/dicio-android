@@ -9,7 +9,7 @@ composeBom = "2025.09.01"
 datastore = "1.1.7"
 desugarJdkLibs = "2.1.5"
 # used in settings.gradle.kts for git dependencies
-dicioNumbers = "ddc9a6afeb77a69ad78bdfda0c2c55bdfb2523bd"
+dicioNumbers = "ea0ff23b1856642f1fe1592dbbb8fbb4bf38727c"
 dicioSentencesCompiler = "6d0f1ca0a732c28329b3fd0f7c8f351e00933ad6"
 exp4j = "0.4.8"
 gradle = "8.13.0"
