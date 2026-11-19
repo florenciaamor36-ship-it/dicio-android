@@ -47,6 +47,9 @@ jobs:
           distribution: "temurin"
           cache: 'gradle'
 
+      - name: Test the Spanish number library
+        run: ./gradlew -p checkouts/dicio-numbers test --stacktrace
+
       - name: Build debug APK and run jvm tests
         run: ./gradlew assembleDebug lintDebug testDebugUnitTest --stacktrace
 
