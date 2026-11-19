@@ -1,7 +1,7 @@
 turn_on:
-  - (enciende|prende|activa|habilita) la? (linterna|luz|flash)
+  - (enciende|encendé|prende|prendé|activa|activá|habilita|habilitá) la? (linterna|luz|flash)
   - (pone|pon) la? (linterna|luz|flash)
 
 turn_off:
-  - (apaga|desactiva|deshabilita) la? (linterna|luz|flash)
-  - quita la? (linterna|luz|flash)
+  - (apaga|apagá|desactiva|desactivá|deshabilita|deshabilitá) la? (linterna|luz|flash)
+  - (quita|saca|sacá) la? (linterna|luz|flash)

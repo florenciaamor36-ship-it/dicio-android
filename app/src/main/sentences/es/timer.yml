@@ -1,12 +1,12 @@
 set:
   - (avisame|avisa me|notificame) en .duration.
-  - (pone|configura|inicia|crea) (un)? (temporizador|cronometro|contador) (de|por|durante)? .duration.
-  - (pone|configura|inicia|crea) (un)? (temporizador|cronometro|contador) (de|por|durante)? .duration. (llamado .name.)?
+  - (pone|poné|configura|configurá|inicia|iniciá|crea|creá|arma|armá|programa|programá) (un)? (temporizador|cronometro|contador) (de|por|durante)? .duration.
+  - (pone|poné|configura|configurá|inicia|iniciá|crea|creá|arma|armá|programa|programá) (un)? (temporizador|cronometro|contador) (de|por|durante)? .duration. (llamado .name.)?
 
 cancel:
-  - (cancela|detene|para) (el)? (temporizador|cronometro|contador) .name.?
+  - (cancela|cancelá|detene|detené|para|pará) (el)? (temporizador|cronometro|contador) .name.?
   - (silencia|desactiva) (la)? alarma .name.?
 
 query:
-  - (cuanto) tiempo (te|le) (queda|falta|resta) (al)? (temporizador|cronometro|contador) .name.?
-  - (cuando) (termina|finaliza) (el)? (temporizador|cronometro|contador) .name.?
+  - (cuanto|cuánto) tiempo (te|le) (queda|falta|resta) (al)? (temporizador|cronometro|contador) .name.?
+  - (cuando|cuándo) (termina|finaliza) (el)? (temporizador|cronometro|contador) .name.?
