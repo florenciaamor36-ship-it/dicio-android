@@ -1,4 +1,4 @@
 command:
-  - (contame|contá|cuéntame|cuentame|decime|decí|dime|tirame) (un? (chiste|broma))
-  - (haceme|hazme) (reir|reír) (con (un? (chiste|broma)))?
-  - (contame|contá|decime|decí|dime) algo (gracioso|divertido)
+  - (contame|conta|cuentame|decime|deci|dime|tirame) (un)? (chiste|broma)
+  - (haceme|hazme) (reir) (con (un)? (chiste|broma))?
+  - (contame|conta|decime|deci|dime) algo (gracioso|divertido)
