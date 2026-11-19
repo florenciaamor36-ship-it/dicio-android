@@ -157,6 +157,7 @@ fun HomeScreen(
                 skillContext = skillContext,
                 skills = skills,
                 interactionLog = interactionLog,
+                sttState = sttState,
                 onConfirmedQuestionClick = { searchString = it },
                 wakeState = wakeState,
                 onWakeDownload = onWakeDownload,
