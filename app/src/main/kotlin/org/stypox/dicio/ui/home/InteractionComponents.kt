@@ -62,6 +62,7 @@ fun InteractionList(
     // will be null when skills have not been initialized yet
     skills: List<SkillInfo>?,
     interactionLog: InteractionLog,
+    sttState: org.stypox.dicio.io.input.SttState?,
     onConfirmedQuestionClick: (String) -> Unit,
     wakeState: WakeState?,
     onWakeDownload: () -> Unit,
@@ -91,6 +92,10 @@ fun InteractionList(
         verticalArrangement = Arrangement.spacedBy(8.dp),
         state = listState,
     ) {
+        countedItem(canBeAnchor = false) {
+            AssistantWelcomeCard(sttState = sttState)
+        }
+
         countedItem(canBeAnchor = false) {
             if (wakeState != null) {
                 WakeWordWidget(
@@ -194,6 +199,7 @@ fun InteractionListPreview(
             skillContext = SkillContextImpl.newForPreviews(LocalContext.current),
             skills = SkillInfoPreviews().values.toList(),
             interactionLog = interactionLog,
+            sttState = SttStatesPreviews().values.firstOrNull(),
             wakeState = wakeStatesPreviews[interactionLog.hashCode().absoluteValue % wakeStatesPreviews.size],
             onWakeDownload = {},
             onWakeDisable = {},
