@@ -8,7 +8,7 @@ Actualizar este archivo en cada tanda de trabajo. No marcar fase completa solo p
 - **Fase 1 — español:** interfaz con todos los IDs revisados; idioma inicial español para instalaciones nuevas y usuarios migrados sin idioma previo; frases actualizadas al habla rioplatense para hora, linterna, temporizadores, cálculos, chistes, apertura de apps, búsquedas, navegación, llamadas y clima. La compilación valida los archivos DSL; faltan pruebas del reconocimiento real y evaluación de ambigüedades.
 - **Fase 2 — interfaz propia:** primera tarjeta de bienvenida, avatar vectorial dibujado con Compose y estado de voz añadido a la pantalla principal. CI de compilación debug y JVM terminó success en commit `b65aef923e4c23872bb0602d09cfbf355a3f6d8b`. Falta prueba visual en emulador/teléfono y diseño integral.
 - **Fases 3–8:** pendientes: cápsula/overlay, acciones nuevas, memoria, IA local, mensajería segura, auditoría integral y release firmada.
-- **Dependencia numérica:** se inició soporte experimental en la rama `feature/spanish-locale` del fork GPL `florenciaamor36-ship-it/dicio-numbers`, con tokenizer, parser, formatter y pruebas iniciales. Todavía no se integra en `main`: las pruebas JVM de inicialización de la configuración española fallan, aunque la app compiló al fijar la integración experimental. Investigar y corregir el error de carga de recursos antes de promover.
+- **Dependencia numérica:** se inició soporte experimental en la rama `feature/spanish-locale` del fork GPL `florenciaamor36-ship-it/dicio-numbers`, con tokenizer, parser, formatter y pruebas iniciales. No se integra en `main` hasta pasar validación completa. Las pruebas JVM de la biblioteca ya pasaron en CI (314 tests, incluyendo los casos españoles); también compiló la app en un build previo. El build integrado más reciente aún está corriendo y debe confirmarse antes de considerar validada la integración.
 
 ## Validaciones
 
@@ -29,6 +29,6 @@ Aunque las frases españolas existen, la dependencia numérica no admite españo
 
 1. Añadir pruebas directas del matcher para frases argentinas y evitar ambigüedades, más allá de la compilación del DSL.
 2. Instalar/correr el APK debug en emulador y revisar visualmente la tarjeta de bienvenida.
-3. Corregir fallos de carga/configuración en pruebas de `feature/spanish-locale` de `florenciaamor36-ship-it/dicio-numbers`; solo después revalidar su PR y la compilación integrada.
+3. Confirmar el build integrado del PR experimental de números; luego ampliar casos de regresión de números, fechas y duraciones, revisar la gramática y probar los comandos en emulador/dispositivo antes de decidir su integración.
 4. Completar la interfaz propia/avatar según `AGENTS.md`.
 5. Continuar fases siguientes solo con compilación y pruebas, registrando claramente cada limitación.
