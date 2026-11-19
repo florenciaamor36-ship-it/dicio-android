@@ -20,7 +20,7 @@ La disponibilidad real de cada función depende del idioma, permisos, servicios 
 
 La interfaz tiene traducción española y el español es el idioma inicial para instalaciones nuevas de este fork. Se puede cambiar desde Ajustes. Se están ampliando las frases de voz argentinas y hace falta probarlas con el reconocedor en teléfonos reales.
 
-La dependencia de números `dicio-numbers` del proyecto original solo declara soporte para inglés e italiano. Por eso, interpretar números en palabras, fechas y duraciones en español todavía requiere trabajo adicional. No se debe asumir que comandos como «poné un temporizador de cinco minutos» ya funcionan en todas las versiones.
+La rama principal integra el fork `dicio-numbers` con soporte inicial para números, duraciones y fechas en español. Las pruebas automatizadas cubren cardinales, ordinales, algunas duraciones y fechas; esto no confirma el reconocimiento por voz ni todas las variantes del idioma. Los comandos hablados todavía requieren validación en un dispositivo Android real.
 
 ## Compilar
 
