@@ -47,11 +47,13 @@ import org.dicio.skill.context.SkillContext
 import org.dicio.skill.skill.SkillInfo
 import org.dicio.skill.skill.SkillOutput
 import org.stypox.dicio.di.SkillContextImpl
+import org.stypox.dicio.io.input.SttState
 import org.stypox.dicio.io.wake.WakeState
 import org.stypox.dicio.ui.theme.AppTheme
 import org.stypox.dicio.ui.util.InteractionLogPreviews
 import org.stypox.dicio.ui.util.SkillInfoPreviews
 import org.stypox.dicio.ui.util.SkillOutputPreviews
+import org.stypox.dicio.ui.util.SttStatesPreviews
 import org.stypox.dicio.ui.util.UserInputPreviews
 import org.stypox.dicio.ui.util.WakeStatesPreviews
 import kotlin.math.absoluteValue
@@ -62,7 +64,7 @@ fun InteractionList(
     // will be null when skills have not been initialized yet
     skills: List<SkillInfo>?,
     interactionLog: InteractionLog,
-    sttState: org.stypox.dicio.io.input.SttState?,
+    sttState: SttState?,
     onConfirmedQuestionClick: (String) -> Unit,
     wakeState: WakeState?,
     onWakeDownload: () -> Unit,
