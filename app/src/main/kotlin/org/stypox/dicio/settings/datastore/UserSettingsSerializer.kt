@@ -10,6 +10,7 @@ object UserSettingsSerializer : Serializer<UserSettings> {
     override val defaultValue: UserSettings = UserSettings.getDefaultInstance()
         .toBuilder()
         .setAutoFinishSttPopup(true)
+        .setLanguage(Language.LANGUAGE_ES)
         .build()
 
     override suspend fun readFrom(input: InputStream): UserSettings {
