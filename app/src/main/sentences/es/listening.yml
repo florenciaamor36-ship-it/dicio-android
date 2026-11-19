@@ -1,7 +1,8 @@
 stop:
-  - deja|detén|para la? escucha|escuchar
-  - silencia|apaga el? micrófono
+  - (deja|dejá) de escuchar (la palabra de activacion)?
+  - (para|pará|detene|detené) (la escucha|de escuchar)
+  - (silencia|silenciá|apaga|apagá) (el microfono|el micro)
 
 start:
-  - empieza|inicia|comienza la? escucha|escuchar
-  - activa|enciende el? micrófono
+  - (empieza|empezá|inicia|iniciá|comenza|comenzá) a escuchar (la palabra de activacion)?
+  - (activa|activá|enciende|encendé) (el microfono|el micro|la escucha)
