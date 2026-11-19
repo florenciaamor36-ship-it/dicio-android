@@ -51,7 +51,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: florenciaamor36-ship-it/dicio-numbers
-          ref: 4697f1b9b4e7e15ed609b8c84f3b7897d8a96ab4
+          ref: ddc9a6afeb77a69ad78bdfda0c2c55bdfb2523bd
           path: numbers-lib
 
       - name: Test the Spanish number library
