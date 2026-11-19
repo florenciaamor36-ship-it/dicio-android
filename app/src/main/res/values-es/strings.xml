@@ -58,7 +58,7 @@
     <string name="skill_weather_in_city_there_is_description">Hay %2$s y %3$s grados en %1$s ahora mismo</string>
     <string name="skill_weather_description_temperature">%1$s - %2$.1f%3$s</string>
     <string name="skill_lyrics_song_not_found">No encontré la canción %1$s</string>
-    <string name="skill_lyrics_found_song_by_artist">Se ha encontrado la canción %1$s de %2$s</string>
+    <string name="skill_lyrics_found_song_by_artist">Encontré la canción %1$s de %2$s</string>
     <string name="skill_open_unknown_app">Aplicación desconocida %1$s</string>
     <string name="skill_open_opening">Abriendo %1$s…</string>
     <string name="skill_calculator_could_not_calculate">No pude resolver la cuenta</string>
@@ -79,7 +79,7 @@
     <string name="skill_telephone_found_contacts">Encontré %1$d contactos. ¿A cuál llamo\?</string>
     <string name="skill_name_telephone">Teléfono</string>
     <string name="skill_sentence_example_telephone">Llamar a Tom</string>
-    <string name="android_tts_error">Se ha producido un error al inicializar el motor de conversión de texto a voz de Android</string>
+    <string name="android_tts_error">Hubo un error al iniciar el motor de texto a voz de Android</string>
     <string name="pref_skill_missing_permissions">Requiere estos permisos: %1$s</string>
     <string name="pref_skill_grant_permissions">Dar permiso</string>
     <string name="eval_missing_permissions">La habilidad \"%1$s\" necesita estos permisos para funcionar: %2$s</string>
@@ -112,12 +112,12 @@
     <string name="error_github_notice">Antes de reportar el error, comprobá si ya existe un informe igual. Así podemos dedicar más tiempo a corregirlo.</string>
     <string name="error_copy_formatted">Copiar informe con formato</string>
     <string name="error_report_github">Reportar en Github</string>
-    <string name="error_report_notification_toast">Se ha producido un error, consulte la notificación</string>
+    <string name="error_report_notification_toast">Hubo un error; fijate en la notificación</string>
     <string name="error_report_channel_name">Notificar los errores</string>
     <string name="error_report_channel_description">Notificaciones para informar errores</string>
     <string name="error_report_notification_title">Dicio encontró un error, toque para informar</string>
     <string name="error_report">Informar</string>
-    <string name="error_sorry">Lo sentimos, se ha producido un error</string>
+    <string name="error_sorry">Uy, hubo un error</string>
     <string name="skill_name_current_time">Hora actual</string>
     <string name="skill_sentence_example_current_time">¿Qué hora es\?</string>
     <string name="skill_time_current_time">En este momento, es %1$s</string>
@@ -158,7 +158,7 @@
     <string name="expand">Expandir</string>
     <string name="reduce">Reducir</string>
     <string name="pref_theme_system">Usar tema del sistema</string>
-    <string name="pref_theme_system_dark_black">Utiliza el tema del sistema (usa la variante negra para el tema oscuro)</string>
+    <string name="pref_theme_system_dark_black">Usá el tema del sistema (con la variante negra para el tema oscuro)</string>
     <string name="pref_dynamic_colors_title">Colores dinámicos</string>
     <string name="settings_description_with_value">%1$s — %2$s</string>
     <string name="stt_service_label">Reconocimiento de voz sin conexión Dicio</string>
