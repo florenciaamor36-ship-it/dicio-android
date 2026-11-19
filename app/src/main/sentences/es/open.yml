@@ -1,2 +1,4 @@
 query:
-  - abre|inicia|abrir|inicia|iniciar|corre|lanza|ejecuta (app|apli|programa|aplicacion? .what.)|(.what. app|programa|apli|aplicacion?)
+  - (abre|abrí|abri|inicia|iniciá|inicia|ejecuta|ejecutá|lanza|lanzá|corre|corré) (la|el)? (aplicacion|aplicación|app|programa) .what.
+  - (abre|abrí|abri|inicia|iniciá|ejecuta|ejecutá|lanza|lanzá|corre|corré) .what.
+  - .what. (aplicacion|aplicación|app|programa)
