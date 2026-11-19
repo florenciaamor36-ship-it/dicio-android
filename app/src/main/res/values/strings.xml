@@ -281,4 +281,14 @@
     <string name="about_privacy_title">Privacy policy</string>
     <string name="about_privacy_description">Dicio connects to external services only when a skill is expected to do so, or to download machine learning models during setup. All speech processing is performed locally on-device, and most skills can be used offline.</string>
     <string name="about_privacy_link" translatable="false">https://stypox.org/dicio-privacy-policy.html</string>
+    <string name="assistant_home_title">Hi, I’m Dicio</string>
+    <string name="assistant_state_text_only">Text input is ready</string>
+    <string name="assistant_state_microphone_permission">Allow microphone access to speak</string>
+    <string name="assistant_state_voice_unavailable">Voice input is unavailable in this language</string>
+    <string name="assistant_state_voice_setup">Tap the microphone to set up voice input</string>
+    <string name="assistant_state_preparing">Preparing voice input…</string>
+    <string name="assistant_state_voice_error">Voice input needs attention</string>
+    <string name="assistant_state_listening">I’m listening</string>
+    <string name="assistant_state_ready">Ready when you are</string>
+    <string name="assistant_state_waiting">Waiting for the speech result…</string>
 </resources>
