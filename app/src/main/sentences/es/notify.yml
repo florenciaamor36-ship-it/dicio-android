@@ -1,3 +1,4 @@
 notifications:
-  - (lee|dime|cuáles son) mis|las? notificaciones
-  - (lee|dime) qué dicen mis|las? notificaciones
+  - (lee|leé|leeme|leéme) (mis|las) notificaciones
+  - (que dicen|qué dicen) (mis|las) notificaciones
+  - (mostrame|mostrá|muestrame|muéstrame) (mis|las) notificaciones
