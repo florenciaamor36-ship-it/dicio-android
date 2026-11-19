@@ -47,8 +47,15 @@ jobs:
           distribution: "temurin"
           cache: 'gradle'
 
+      - name: Check out the Spanish number library
+        uses: actions/checkout@v4
+        with:
+          repository: florenciaamor36-ship-it/dicio-numbers
+          ref: 3ab1cfa2f45a0838bd9c0a74bbb0085993728d0d
+          path: numbers-lib
+
       - name: Test the Spanish number library
-        run: ./gradlew -p checkouts/dicio-numbers test --stacktrace
+        run: ./gradlew -p numbers-lib test --stacktrace
 
       - name: Build debug APK and run jvm tests
         run: ./gradlew assembleDebug lintDebug testDebugUnitTest --stacktrace
