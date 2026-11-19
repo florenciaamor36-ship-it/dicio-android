@@ -1,4 +1,5 @@
 query:
-  - (navega<r|me?>)|(lleva<me?>)|localiza|((dame la|las?)? direccion<es?>) a|de? el|la? .where.
-  - sabe<s?>|dime? donde esta|(se encuentra) .where.
-  - puede<s?> explicar<me?> como llegar|ir a .where.
+  - (navega|navegá|lleva|llevame|llevá|llevame) a .where.
+  - (como|cómo) llego a .where.
+  - (donde|dónde) queda .where.
+  - (dame|mostrame|mostrá) la direccion de .where.
