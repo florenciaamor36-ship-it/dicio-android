@@ -8,7 +8,7 @@ Actualizar este archivo en cada tanda de trabajo. No marcar fase completa solo p
 - **Fase 1 — español:** interfaz con todos los IDs revisados; idioma inicial español para instalaciones nuevas y usuarios migrados sin idioma previo; frases actualizadas al habla rioplatense para hora, linterna, temporizadores, cálculos, chistes, apertura de apps, búsquedas, navegación, llamadas y clima. La compilación valida los archivos DSL; faltan pruebas del reconocimiento real y evaluación de ambigüedades.
 - **Fase 2 — interfaz propia:** primera tarjeta de bienvenida, avatar vectorial dibujado con Compose y estado de voz añadido a la pantalla principal. CI de compilación debug y JVM terminó success en commit `b65aef923e4c23872bb0602d09cfbf355a3f6d8b`. Falta prueba visual en emulador/teléfono y diseño integral.
 - **Fases 3–8:** pendientes: cápsula/overlay, acciones nuevas, memoria, IA local, mensajería segura, auditoría integral y release firmada.
-- **Dependencia numérica:** soporte experimental en `feature/spanish-locale` del fork GPL `florenciaamor36-ship-it/dicio-numbers`, con parser, formatter, tokenizer y regresiones españolas. Se corrigió el parser para usar el valor completo de centenas de cada idioma; ahora los tests cubren y pasan “doscientos uno” (201) y “trescientos veinticinco” (325), además de números, duración y fechas previas. La suite de biblioteca pasó en CI del run 44618779129. El build Android integrado de ese mismo run sigue atascado en `assembleDebug` sin estado final; un build integrado anterior con la versión previa pasó (44610728448). No promover a `main` hasta confirmar build integrado, ampliar cobertura y validar voz en emulador/dispositivo.
+- **Dependencia numérica:** soporte experimental en `feature/spanish-locale` del fork GPL `florenciaamor36-ship-it/dicio-numbers`. Se corrigió el parser para usar el valor completo de las centenas por idioma, evitando errores como 201→101. También se corrigieron valores plurales de ordinales (`cuartos`, `quintos`, `sextos`) y se añadieron formas plurales para 7–10; las pruebas incluyen cardinales compuestos, ordinales 1–10, duraciones y fechas. La suite de biblioteca pasó en el run Android integrado 44623360583; su build APK/JVM está todavía en curso. No promover a `main` hasta que termine el build, se amplíen pruebas de ordinals/fechas y se valide voz en dispositivo.
 
 ## Validaciones
 
@@ -29,6 +29,6 @@ Aunque las frases españolas existen, la dependencia numérica no admite españo
 
 1. Añadir pruebas directas del matcher para frases argentinas y evitar ambigüedades, más allá de la compilación del DSL.
 2. Instalar/correr el APK debug en emulador y revisar visualmente la tarjeta de bienvenida.
-3. Confirmar el build integrado actual, ampliar regresiones de ordinales/plurales/fechas y revisar otros límites, luego validar comandos hablados en emulador/dispositivo antes de decidir si se integra el PR experimental.
+3. Confirmar el build integrado 44623360583; continuar pruebas de números, ordinales, plurales, fechas y duraciones; después validar comandos hablados en emulador/dispositivo antes de decidir si se integra el PR experimental.
 4. Completar la interfaz propia/avatar según `AGENTS.md`.
 5. Continuar fases siguientes solo con compilación y pruebas, registrando claramente cada limitación.
