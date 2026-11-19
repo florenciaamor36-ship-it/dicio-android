@@ -8,7 +8,7 @@ Actualizar este archivo en cada tanda de trabajo. No marcar fase completa solo p
 - **Fase 1 — español:** interfaz con todos los IDs revisados; idioma inicial español para instalaciones nuevas y usuarios migrados sin idioma previo; frases actualizadas al habla rioplatense para hora, linterna, temporizadores, cálculos, chistes, apertura de apps, búsquedas, navegación, llamadas y clima. La compilación valida los archivos DSL; faltan pruebas del reconocimiento real y evaluación de ambigüedades.
 - **Fase 2 — interfaz propia:** primera tarjeta de bienvenida, avatar vectorial dibujado con Compose y estado de voz añadido a la pantalla principal. CI de compilación debug y JVM terminó success en commit `b65aef923e4c23872bb0602d09cfbf355a3f6d8b`. Falta prueba visual en emulador/teléfono y diseño integral.
 - **Fases 3–8:** pendientes: cápsula/overlay, acciones nuevas, memoria, IA local, mensajería segura, auditoría integral y release firmada.
-- **Dependencia numérica:** soporte experimental en `feature/spanish-locale` del fork GPL `florenciaamor36-ship-it/dicio-numbers`. El parser de cardinales usa el valor de cada token de centena y tiene regresión “doscientos uno” = 201. Se corrigieron ordinales plurales y se añadieron formas de género/número, con y sin tildes, con más de 200 regresiones. Tras fallos de tests por resolver ordinales como fracciones y por tildes normalizadas, se configuró la prueba para preferir ordinales y se agregaron aliases sin tilde: la suite de biblioteca pasó en run 44626354305. El build integrado Android de ese run sigue en curso (sin resultado final ni APK confirmado). PR #1 permanece abierto; no integrar hasta finalizar ese build y validar frases/voz en emulador o teléfono.
+- **Dependencia numérica:** el soporte inicial en español se integró en `dicio-numbers` (PR #1, merge `e66999aed2a3deed69202d31b99970edab368ce5`) y la app Android `main` ahora fija esa versión. Corrige centenas cardinales (“doscientos uno” = 201) y ordinales, con más de 200 regresiones de formas flexionadas y acentuación. La suite de biblioteca y build integrado Android pasaron en run 44626354305; además se inició CI de `main` para el nuevo pin (run 44629805013), todavía en curso. No se probó reconocimiento por voz en emulador/teléfono real.
 
 ## Validaciones
 
@@ -29,6 +29,6 @@ Aunque las frases españolas existen, la dependencia numérica no admite españo
 
 1. Añadir pruebas directas del matcher para frases argentinas y evitar ambigüedades, más allá de la compilación del DSL.
 2. Instalar/correr el APK debug en emulador y revisar visualmente la tarjeta de bienvenida.
-3. Confirmar el build Android del run 44626354305; ampliar validación de fechas/duraciones, frases y casos negativos y probar comandos hablados en emulador/dispositivo antes de decidir si integrar el PR.
+3. Confirmar CI de `main` (run 44629805013); ampliar pruebas de fechas/duraciones y órdenes válidas, ambiguas y negativas; validar comandos hablados en emulador/dispositivo.
 4. Completar la interfaz propia/avatar según `AGENTS.md`.
 5. Continuar fases siguientes solo con compilación y pruebas, registrando claramente cada limitación.
