@@ -1,4 +1,4 @@
 translate:
-  - (por favor)? traduce .query. ((del|desde) .source.)? (al|a) .target.
-  - cómo se dice .query. en .target.
-  - traduce .query. a .target.
+  - (traduce|traduci|traducime|traduceme) .query. ((del|desde) .source.)? ((al|a|en) .target.)
+  - (como|cómo) se dice .query. en .target.
+  - (como|cómo) se traduce .query. en .target.
