@@ -1,0 +1,4 @@
+command:
+  - (cuentame|cuéntame|dime|di|hazme) un? chiste|broma|chiste<s?>|broma<s?>
+  - (hazme reir|házme reír|entreténme|anímame) (con un? chiste|broma)?
+  - di algo gracioso|divertido
