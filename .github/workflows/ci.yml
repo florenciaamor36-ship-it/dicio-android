@@ -56,7 +56,7 @@ jobs:
 
       - name: Test the Spanish number library
         run: |
-          cd numbers-lib && ./gradlew test --stacktrace
+          cd numbers-lib && ./gradlew test --stacktrace || { cat numbers/build/test-results/test/*.xml; exit 1; }
 
       - name: Build debug APK and run jvm tests
         run: ./gradlew assembleDebug lintDebug testDebugUnitTest --stacktrace
