@@ -50,6 +50,8 @@ class UserSettingsModule {
                     )
                     .setLanguage(
                         when (prefs.getString("language")) {
+                            null -> Language.LANGUAGE_ES
+                            "system" -> Language.LANGUAGE_SYSTEM
                             "cs" -> Language.LANGUAGE_CS
                             "de" -> Language.LANGUAGE_DE
                             "en" -> Language.LANGUAGE_EN
