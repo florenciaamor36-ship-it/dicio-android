@@ -1,4 +1,4 @@
 calculate:
-  - (calcula|calcular|resuelve|resolvé) .calculation.
-  - (cuanto|cuánto) (es|da) .calculation.
-  - (cuanto|cuánto) vale .calculation.
+  - (calcula|calcular|resuelve|resolver) .calculation.
+  - (cuanto) (es|da) .calculation.
+  - cuanto vale .calculation.
