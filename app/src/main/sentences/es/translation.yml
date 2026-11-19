@@ -1,0 +1,4 @@
+translate:
+  - (por favor)? traduce .query. ((del|desde) .source.)? (al|a) .target.
+  - cómo se dice .query. en .target.
+  - traduce .query. a .target.
