@@ -1,3 +1,4 @@
 query:
-  - busca<r?>|investiga<r?>|revisa<r?>|busca<r?>|encuentra (que|como es?)|(informacion de|sobre)? .what. online|(en|por (el|la)? internet|(motor|buscador? web))?
-  - señala<r|me|rme?>|mira<r?> (que|como es?)? .what. (ahora|ya mismo?)?
+  - (busca|buscá|investiga|investigá|revisa|revisá|encuentra|encontrá) .what. (en internet|por internet|en la web)?
+  - (busca|buscá) (informacion|información) (sobre|de) .what.
+  - (averigua|averiguá|fijate) (sobre|como funciona) .what.
