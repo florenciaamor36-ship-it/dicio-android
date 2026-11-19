@@ -1,3 +1,4 @@
 query:
-  - (disculpe|disculpa)? (a? que)|cual (es la)? hora (tiene<s?>|es)?
-  - d<a|i>me|(puede<s?> decir) la hora
+  - (disculpa|disculpá)? (a que hora|que hora es|cual es la hora|cual es la hora ahora)
+  - (decime|deci|dime) la hora
+  - (me|nos) decis la hora
