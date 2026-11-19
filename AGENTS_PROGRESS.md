@@ -8,7 +8,7 @@ Actualizar este archivo en cada tanda de trabajo. No marcar fase completa solo p
 - **Fase 1 — español:** interfaz con todos los IDs revisados; idioma inicial español para instalaciones nuevas y usuarios migrados sin idioma previo; frases actualizadas al habla rioplatense para hora, linterna, temporizadores, cálculos, chistes, apertura de apps, búsquedas, navegación, llamadas y clima. La compilación valida los archivos DSL; faltan pruebas del reconocimiento real y evaluación de ambigüedades.
 - **Fase 2 — interfaz propia:** primera tarjeta de bienvenida, avatar vectorial dibujado con Compose y estado de voz añadido a la pantalla principal. CI de compilación debug y JVM terminó success en commit `b65aef923e4c23872bb0602d09cfbf355a3f6d8b`. Falta prueba visual en emulador/teléfono y diseño integral.
 - **Fases 3–8:** pendientes: cápsula/overlay, acciones nuevas, memoria, IA local, mensajería segura, auditoría integral y release firmada.
-- **Dependencia numérica:** el soporte inicial en español se integró en `dicio-numbers` (PR #1, merge `e66999aed2a3deed69202d31b99970edab368ce5`) y la app Android `main` ahora fija esa versión. Corrige centenas cardinales (“doscientos uno” = 201) y ordinales, con más de 200 regresiones de formas flexionadas y acentuación. La suite de biblioteca y build integrado Android pasaron en run 44626354305; además se inició CI de `main` para el nuevo pin (run 44629805013), todavía en curso. No se probó reconocimiento por voz en emulador/teléfono real.
+- **Dependencia numérica:** soporte inicial integrado en el fork `dicio-numbers` (PR #1, merge `e66999aed2a3deed69202d31b99970edab368ce5`) y app `main` fijada a esa revisión. Corrige centenas cardinales (“doscientos uno” = 201) y ordinales, con más de 200 regresiones flexionadas. La biblioteca y build Android integrado pasaron en run 44626354305. La primera CI de `main` falló porque la configuración aún apuntaba el checkout al upstream y no encontraba el commit del fork; se cambió la URL de `settings.gradle.kts` al fork. Runs 44630016117 y 44631100952 siguen marcados `in_progress` en Gradle, sin resultado final consultable. Se agregaron también variantes rioplatenses de voseo para temporizador y linterna en commit `d307ba5ff5342f8e4be28e8f852bdce153fedecc`; falta confirmar CI. No se ha validado reconocimiento por voz en un teléfono.
 
 ## Validaciones
 
@@ -29,6 +29,6 @@ Aunque las frases españolas existen, la dependencia numérica no admite españo
 
 1. Añadir pruebas directas del matcher para frases argentinas y evitar ambigüedades, más allá de la compilación del DSL.
 2. Instalar/correr el APK debug en emulador y revisar visualmente la tarjeta de bienvenida.
-3. Confirmar CI de `main` (run 44629805013); ampliar pruebas de fechas/duraciones y órdenes válidas, ambiguas y negativas; validar comandos hablados en emulador/dispositivo.
+3. Confirmar la CI de `main` tras corregir la URL del fork; ampliar pruebas de fechas/duraciones y órdenes válidas, ambiguas y negativas; validar comandos hablados en emulador/dispositivo.
 4. Completar la interfaz propia/avatar según `AGENTS.md`.
 5. Continuar fases siguientes solo con compilación y pruebas, registrando claramente cada limitación.
